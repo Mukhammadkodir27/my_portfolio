@@ -42,20 +42,55 @@
                     <p> Hi, ....................., </p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link" oneclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" oneclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" oneclick="opentab('education')">Education</p>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/UX</span><br>....</li>
-                            <li><span>UI/UX</span><br>....</li>
-                            <li><span>UI/UX</span><br>....</li>
+                            <li><span>Python Developer</span><br>Experienced Python Programmer</li>
+                            <li><span>Software Engineer</span><br>Microsoft Azure and Cloud Development</li>
+                            <li><span>Linux/Bash</span><br>CyberSecurity Analyst</li>
                         </ul>
                     </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Software Engineer at Infosys Poland</li>
+                            <li><span>Software Engineer</span><br>Microsoft Azure and Cloud Development</li>
+                            <li><span>Linux/Bash</span><br>CyberSecurity Analyst</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - 2023</span><br>University of Lodz (Bachelor's Degree)</li>
+                            <li><span>2018 - 2020</span><br>High School Mathematics and Statistics</li>
+                            <li><span>Linux/Bash</span><br>CyberSecurity Analyst</li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>
+
+        <script>
+            var tablinks = document.getElementByClassName("tab-links");
+            var tabcontents = document.getElementByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+
+            }
+        </script>
 
 </body>
 
