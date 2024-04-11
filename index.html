@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/961c7ff13c.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
@@ -17,13 +16,15 @@
         <div class="container">
             <nav>
                 <img src="images/logo.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  <!-- <i class="fa-solid fa-xmark" onclick="closemenu()"></i> -->  
                 </ul>
+                <!-- <i class="fa-solid fa-bars" onclick="openmenu()"></i> -->
             </nav>
             <div class="header-text">
                 <p>Software Engineer</p>
@@ -40,35 +41,66 @@
                 </div>
                 <div class=" about-col-2">
                     <h1 class="sub-title">About Me</h1>
-
-                    <p> Hi, ....................., </p>
+                    <br>
+                    <p> With a Mathematics and Computer Science degree from the University of Lodz, my journey in tech is guided by a passion for software engineering and developing meaningful web and mobile applications using Python. Intrigued by the potential of AI and machine learning, I’m diving into these fields with the goal of creating innovative solutions. As a newcomer, my focus is on leveraging my analytical skills and curiosity to grow into a skilled contributor in technology. I’m eager to learn, ready to tackle challenges, and determined to make a positive impact through my work. </p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('information')">Information</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Python Developer</span><br>Experienced Python Programmer</li>
-                            <li><span>Software Engineer</span><br>Microsoft Azure and Cloud Development</li>
-                            <li><span>Linux/Bash</span><br>CyberSecurity Analyst</li>
+                            <li><span style="font-size: larger;"><strong>Python Developer</strong></span><br>Python, Django, Flask, Rest API, Data Structures and Algorithms, Pandas, HTML & CSS, Data Visualization Tools<br>
+                            </li>
+                            <li><span style="font-size: larger;"><strong>Software Engineer</strong></span><br>
+                                Microsoft Azure, AWS, Git & GitHub, Linux, Bash, C++, VBA, G-Scripting, Microsoft Office, Microsoft Excel, Scrum, Power BI
+                            </li>
+                            <li><span style="font-size: larger;"><strong>Dynamic Team Collaborator: Embracing Learning & Innovation</strong></span><br>
+                                Collaborative Team Player, Autonomous Work Ethic, Effective Multitasking, Strong Problem-Solving Skills, Adaptive Learning Approach, Exceptional Communication Abilities, Exceptional Communication Abilities, Creative Thinking and Innovation
+                            </li>
                         </ul>
                     </div>
 
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2022 - Current</span><br>Software Engineer at Infosys Poland</li>
-                            <li><span>Software Engineer</span><br>Microsoft Azure and Cloud Development</li>
-                            <li><span>Linux/Bash</span><br>CyberSecurity Analyst</li>
+                            <li><span>2022 - 2023</span><br>Software Engineer at Infosys Poland<br>
+                                ● Showcased expertise in both Python and VBA programming, bringing a dynamic skill set to the table.  <br> 
+                                ● Designed, developed, and implemented test scripts and macros, enhancing efficiency in both the testing process and software development.<br>
+                                ● Collaborated closely with Senior Engineers, and business analysts to ensure a clear understanding of project requirements.
+                            </li>
+                            <li><span>2022 - 2023</span><br>IT Technical Support Intern at Infosys Poland<br>
+                                ● Implemented best practices for environment configuration, including version control, dependency management, and system compatibility checks.<br> 
+                                ● Developed Real-World Client Projects using G-Scripting and VBA.<br>
+                            </li>
+                            <li><span>2021 - 2022</span><br>C++ Developer Intern at VRR Immersive Technologies<br>
+                                ● Harnessing the power of C++ and Qt to create immersive and engaging gaming experiences.<br>
+                            </li>
                         </ul>
                     </div>
 
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2020 - 2023</span><br>University of Lodz (Bachelor's Degree)</li>
-                            <li><span>2018 - 2020</span><br>High School Mathematics and Statistics</li>
-                            <li><span>Linux/Bash</span><br>CyberSecurity Analyst</li>
+                            <li><span>2020 - 2024</span><br>Bachelor of Computer Science at the University of Lodz <br>
+                                ● Courses: <br>Algorithms and Data Structures <br> Software Engineering with Python <br> Computer Graphics
+                                <br> Operating Systems <br> Object Oriented Programming <br> Database Administration <br> Cloud Services <br> Programming in C++
+                            </li>
+                            <li><span>2018 - 2020</span><br>High School Mathematics and Statistics<br>
+                                ● Courses: <br>Algebra<br> Introduction to Statistics <br> Basics of Web Apps
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="information">
+                        <ul>
+                            <li><span style="font-size: larger;"><strong>Python Developer</strong></span><br>As a Python Engineer with a foundation in software engineering and a Bachelor's degree from the University of Lodz, 
+                               <br> I blend hands-on experience in diverse tech environments with a deep commitment to ongoing skill enhancement. <br>
+                                Specializing in Python and versed in version control systems, my career is fueled by a passion for crafting efficient, <br>
+                                scalable solutions. I aim to leverage this expertise to drive innovation and deliver value in my future projects.</li>
+                            <li><span style="font-size: larger;"><strong>Software Engineer</strong></span><br>
+                                As a Software Engineer with a strong educational background and practical experience, I specialize in developing robust solutions using cloud technologies such as AWS and Azure. My proficiency extends to leveraging Linux and Bash <br> for streamlined operations, underscoring my adaptability and commitment to excellence in a dynamic tech landscape. <br> My goal is to contribute to innovative projects where my diverse skill set can shine and create impactful results.</li>
+                            <li><span style="font-size: larger;"><strong>Aspiring Innovator: AI & Mobile App Development</strong></span><br>Embarking on an exciting journey in the realms of artificial intelligence and mobile app development, I bring a fresh, eager perspective fueled by a profound interest in leveraging technology to solve real-world problems. Though new to the field,<br> my dedication to mastering these areas is unwavering. I am committed to exploring the vast possibilities of AI to enhance <br> app functionalities and user experiences, aiming to bridge the gap between complex algorithms and everyday utility.<br> My journey is defined by a relentless pursuit of knowledge, continuous skill development, and a visionary approach to technology. I am excited to grow, innovate, and contribute to shaping the future of AI and mobile applications.</li>
                         </ul>
                     </div>
 
@@ -84,23 +116,85 @@
 
                     <div>
                         <i class="fa-solid fa-code"></i>
-                        <h2>Web Design</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea provident iusto accusamus libero temporibus aspernatur nisi non fuga error quisquam?</p>
+                        <h2>Web & Mobile App Development</h2>
+                        <p>I harness the power of various libraries and resources to craft dynamic web and mobile applications that meet modern needs. My approach combines a keen interest in app development with a commitment to learning and applying the latest technologies for seamless user experiences.</p>
                         <a href="#">Learn more</a>
                     </div>
                     <div>
-                        <i class="fa-solid fa-crop"></i>
-                        <h2>Python Developer</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt labore ut optio iure quasi eum nihil placeat sunt, et nostrum.</p>
+                        <i class="fa-solid fa-crop"></i> 
+                        <h2>Explorations in AI and Data Analytics</h2>
+                        <p>My journey into AI and data analytics is driven by a fascination with how these technologies can transform industries. I am actively learning and experimenting with AI models and data analytics tools to find innovative solutions to complex problems.</p>
                         <a href="#">Learn more</a>
                     </div>
                     <div>
-                        <i class="fa-brands fa-app-store"></i>
-                        <h2>App Design</h2>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae molestias deserunt voluptate aperiam sapiente sequi dolore repudiandae dolor nam nesciunt. </p>
+                        <i class="fa-solid fa-microchip"></i>
+                        <h2>Cloud Setup and Exploration</h2>
+                        <p> Recognizing the critical role of cloud technology in today's digital landscape, I am dedicated to mastering cloud setups and exploring the vast potential of cloud services. My goal is to build foundational cloud-based solutions that support scalability, flexibility, and efficiency for projects of all sizes. </p>
                         <a href="#"> Learn more</a>
                     </div>
 
+                </div>
+            </div>
+        </div>
+
+        <!--  ----------------- Portfolio ------------------  -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png"> 
+                        <div class="layer">
+                            <br>
+                            <h3>🏆 InExTrack</h3>
+                            <p>Simplify your financial life by tracking income and expenses with ease, keeping your budget in perfect harmony.</p>
+                        </div>           
+                    </div>   
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <br>
+                            <h3>🏆 SafarMubarak</h3>
+                            <p>Your spiritual companion for a seamless Umrah experience.</p>
+                        </div>             
+                    </div>  
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <br>
+                            <h3>🏆 PairCall</h3>
+                            <p>Where every conversation is an intimate connection, reserved for you and your significant other.</p>
+                        </div>              
+                    </div>   
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>    
+        </div>    
+
+        <!--  ----------------- Portfolio ------------------  -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>mukhammadkodirabdusalomov27@gmail.com</p>
+                        <div class="social-icons">
+                            <a href="www.linkedin.com/in/mukhammadkodir-abdusalomov"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/Mukhammadkodir27"><i class="fa-brands fa-github"></i></i></a>
+                            <a href="https://www.hackerrank.com/profile/mukhammadkodir27"><i class="fa-brands fa-hackerrank"></i></i></a>
+                            <a href="https://mukhammadkodir-abdusalomov-27-resume.streamlit.app/"><i class="fa-solid fa-file"></i></i></i></a>
+                        </div>
+                        <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>    
                 </div>
             </div>
         </div>
@@ -123,6 +217,36 @@
             }
         </script>
 
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu() {
+                document.getElementById("sidemenu").style.right = "0";
+            }
+              
+            function closemenu() {
+                document.getElementById("sidemenu").style.right = "-200px";
+            }
+        </script>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwN9usz4TkuVBUFpswaWuZc1L1WFH8WB4boGrX3ETHjD2dOGF5fdLoHjPEB-Wq4_WYZ/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
 </body>
 
 </html>
